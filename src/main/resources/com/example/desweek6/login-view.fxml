@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.desweek6.LogInController">
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #000000;" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="38.0" layoutY="125.0" prefHeight="36.0" prefWidth="143.0" text="Username" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="25.0" />
+                    </font>
+                </Label>
+                <Label layoutX="38.0" layoutY="182.0" prefHeight="36.0" prefWidth="143.0" text="Password" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="25.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="username" layoutX="198.0" layoutY="130.0" prefHeight="38.0" prefWidth="370.0" promptText="username" />
+                <PasswordField fx:id="password" layoutX="198.0" layoutY="187.0" prefHeight="34.0" prefWidth="373.0" promptText="password" />
+                <Button fx:id="login_button" layoutX="262.0" layoutY="288.0" mnemonicParsing="false" onAction="#userLogIn" style="-fx-background-color: #b2b2b2;" text="LogIn">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Label fx:id="wrong_login" layoutX="234.0" layoutY="64.0" textFill="RED" />
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>
